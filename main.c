@@ -55,8 +55,22 @@ int add() {
     return EXIT_SUCCESS;
 }
 
+int show() {
+    char dt[CHAR_MAX], i = 1;
+    while (fread(&session, sizeof(struct _session), 1, file)) {
+            strftime(dt, CHAR_MAX, "%d.%m.%y, %H:%M", &session.dt);
+            printf("%i: %s, %s, %s, зал №%i, %s\n",
+                   i++, dt, session.cinema, session.film,
+                   session.hall, session.type);
+    };
+}
+
 int main () {
-    file = fopen("db", "ab");
+    file = fopen("db", "a+b");
+
+    //add();
+    show();
+
     fclose(file);
 	return EXIT_SUCCESS;
 }
