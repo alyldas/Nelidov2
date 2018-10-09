@@ -1,0 +1,11 @@
+[functions.c:19]: (warning) scanf() without field width limits can crash with huge input data.
+[functions.c:26]: (warning) scanf() without field width limits can crash with huge input data.
+[functions.c:31]: (warning) scanf() without field width limits can crash with huge input data.
+[functions.c:35]: (warning) scanf() without field width limits can crash with huge input data.
+[functions.c:49]: (warning) scanf() without field width limits can crash with huge input data.
+[functions.c:90]: (warning) scanf() without field width limits can crash with huge input data.
+[functions.c:98]: (warning) scanf() without field width limits can crash with huge input data.
+[functions.c:103]: (warning) scanf() without field width limits can crash with huge input data.
+[functions.c:107]: (warning) scanf() without field width limits can crash with huge input data.
+[functions.c:117]: (warning) scanf() without field width limits can crash with huge input data.
+(information) Cppcheck cannot find all the include files (use --check-config for details)

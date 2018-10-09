@@ -71,6 +71,7 @@ int edit() {
 
     if (n <= 0) {
             printf("Записи под таким номером не существует.\n");
+            fclose(fp);
             return 0;
     }
 
@@ -141,12 +142,16 @@ int rem() {
 
     if (n <= 0) {
             printf("Записи под таким номером не существует.\n");
+            fclose(fp);
+            fclose(fp_);
             return 0;
     }
 
     for (int i = 1; i <= n; i++)
         if (!fread(&session, sizeof(struct sessions), 1, fp)) {
             printf("Записи под таким номером не существует.\n");
+            fclose(fp);
+            fclose(fp_);
             return 0;
         }
 
